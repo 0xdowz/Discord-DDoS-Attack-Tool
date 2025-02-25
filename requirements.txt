@@ -1,0 +1,13 @@
+# 
+requests==2.31.0
+websockets==12.0
+psutil==5.9.8
+pycryptodome==3.20.0
+scapy==2.5.0
+numpy==1.26.4
+Pillow==10.3.0
+dbus-python==1.3.2
+systemd-python==238
+
+# Optional 
+pyinstaller==6.7.0
