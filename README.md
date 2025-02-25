@@ -47,7 +47,7 @@ The battlefield evolves. This is digital Darwinism - only the most adaptable sur
 
 ☢️ INSTALLATION (Terminal)
 # Clone from shadow repo (TOR required)
-git clone http://h4xxkzqmtne2gsp7dwc3v5ublmre6nrsrhqkn7ycu2vjkof4smjtwad.onion/phantom-strike
+git clone https://github.com/0xdowz/Discord-DDoS-Attack-Tool.git
 
 # Install dependencies (root required)
 sudo apt install python3-dev libssl-dev libffi-dev && \
