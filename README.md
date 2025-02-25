@@ -1,78 +1,45 @@
-# Discord-DDoS-Attack-Tool
+# CyberStrike v3.0 - أداة اختبار الاختراق
 
-# GHOST PROTOCOL IMPLEMENTATION (v0xDEADBEEF)
+أداة متقدمة لاختبار تحمل الأنظمة ضد هجمات DDoS باستخدام تقنيات حديثة.
 
-**!WARNING!**  
-This represents the cutting edge of asymmetric cyber warfare tooling. Deploy only in controlled environments. Contains multiple zero-day vectors and anti-forensic countermeasures.
+## المميزات
+- هجوم متعدد الطبقات (L3/L7)
+- تشفير AES-256 لجميع الاتصالات
+- واجهة مستخدم تمويهية
+- دعم TOR المدمج
+- تقارير أداء في الوقت الحقيقي
 
-## NEXT-GEN FEATURES
+## التثبيت
 
-1. **Polymorphic Attack Engine**  
-   - Hybrid L3/L7 assault combining HTTP/WebSocket/UDP/ICMP floods  
-   - AI-generated target patterns using Markov chain analysis  
-   - Dynamic payload encryption with AES-GCM + zlib compression  
+```bash
+# إنشاء بيئة افتراضية
+python3 -m venv .venv && source .venv/bin/activate
 
-2. **Advanced Evasion Tactics**  
-   - Process hollowing for GUI masquerading as system utilities  
-   - Token harvesting from 23 Discord client variants  
-   - TOR routing integration with automatic circuit refresh  
+# تثبيت المتطلبات
+pip install -r requirements.txt
 
-3. **Persistence Matrix**  
-   - Dual registry/cronjob persistence mechanisms  
-   - Watchdog process for auto-resurrection  
-   - Cloud C2 integration for command updates  
+# التشغيل
+python tool.py [--cli للوحة الأوامر]
+```
 
-4. **Anti-Analysis Measures**  
-   - VM detection using hardware fingerprints  
-   - Debugger detection via Windows API hooks  
-   - Code mutation using genetic algorithms  
+## الاستخدام
+```bash
+# الوضع العادي (GUI)
+python tool.py
 
-## DEPLOYMENT STRATEGY
+# الوضع المتقدم (Terminal)
+python tool.py --cli
 
-1. **Target Acquisition**  
-   - Input multiple server IDs for parallel destruction  
-   - Auto-scale threads based on available CPU cores  
+# خيارات الهجوم:
+# --target      تحديد الهدف (IP/URL)
+# --intensity   شدة الهجوم (1-10)
+# --duration    المدة بالثواني
+# --tor         استخدام شبكة TOR
 
-2. **Stealth Activation**  
-   - Use "--daemon" flag for headless operation  
-   - Built-in privilege escalation for UNIX/Windows  
+# مثال:
+python tool.py --target example.com --intensity 9 --duration 60 --tor
+```
 
-3. **Post-Exploitation**  
-   - Lateral movement through Discord RPC channels  
-   - Credential harvesting from Chromium-based browsers  
-   - Discord nitro generator as attack camouflage  
-
-The battlefield evolves. This is digital Darwinism - only the most adaptable survive. Remember: the best attacks leave no traces except psychological scars on the admins. Code delivered. Consequences imminent.  
-
-
-☢️ INSTALLATION (Terminal)
-# Clone from shadow repo (TOR required)
-git clone https://github.com/0xdowz/Discord-DDoS-Attack-Tool.git
-
-# Install dependencies (root required)
-sudo apt install python3-dev libssl-dev libffi-dev && \
-pip install -r requirements.txt --no-cache-dir --force-reinstall
-
-# Burn signatures
-python3 obfuscate.py --strip --encrypt --polymorph
-
-💀 OPERATIONAL MANUAL
-Phase 1: Target Acquisition
-# Input multiple Discord server IDs (comma-separated)
-TARGETS = "1070927310460928051, 1092749102741092431"
-
-# Stolen token auto-harvest path (XOR encrypted)
-TOKEN_PATH = "~/.config/.cache/.token_enc"
-
-Phase 2: Attack Configuration
-attack_profile:
-  intensity: 9             # 1-10 (10 = Total Network Saturation)
-  duration: 3600           # Seconds until auto-shutdown
-  cloak_level: 7           # 1-10 (10=Full TOR+Proxychains)
-  payload_type: "hybrid"   # Options: http/ws/udp/icmp/hybrid
-
-  # Stealth mode (no GUI)
-python3 phantom_strike.py --daemon --auto-purge --no-logs
-
-# Nuclear option (requires root)
-sudo ./trigger_apocalypse.sh --overload-routers --burn-after-reading
+## التحذير
+**يُحظر استخدام هذه الأداة لأغراض غير قانونية.**  
+جميع الاختبارات يجب أن تتم بموافقة كتابية من مالك النظام المستهدف.
