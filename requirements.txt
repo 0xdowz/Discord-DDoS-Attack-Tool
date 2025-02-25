@@ -1,0 +1,6 @@
+"""
+aiohttp==3.9.3
+colorama==0.4.6
+PySocks==1.7.1
+websockets==12.0
+"""
